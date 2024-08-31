@@ -4,6 +4,7 @@
 * {
     margin: 0;
     padding: 0;
+    
 }
 
 /* every piece of text is in one font */
@@ -25,36 +26,46 @@ img {
     font-family: "Montserrat", sans-serif;
 }
 
-.quote {
-    position: relative;
-    top: 130px;
-    border: 5px solid;
-    border-color: rgba(255, 255, 255, 0);
-    font-size: 30px;
-    color: #ffffff;
-    text-align: center;
-    text-justify: inter-word;
-}
-
-li, a {
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: 500;
-    font-size: 16px;
-    color: #000000
-}
-
 header {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
     align-items: center;
-    padding: 30px 10%;
-    background-color: #a8dadc;
+    padding: 20px 10%;
+    background-color: #0aaec4;
+    margin: auto;
+    color: #ffffff;
 }
 
-.container {
+.wrapper{
+    border: none;
+    width: 70rem;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 30px 10%;
+    background-color: #0aaec4;
+    margin: auto;
+}
+
+.contacts {
+    display: inline-block;
+    padding: 0px 20px;
+    font: 'Exo', sans-serif;
+    font-size: 30px;
+}
+
+.logo {
     display: flex;
     align-items: center;
     padding: 0px 20px;
+    margin-right: auto;
+}
+
+li, a, button{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    color: #ffffff
 }
 
 .nav_links {
@@ -63,35 +74,104 @@ header {
 
 .nav_links li {
     display: inline-block;
-    padding: 0px 20px
+    padding: 0px 20px;
 }
 
 .nav_links li a {
     transition: all 0.3s ease 0s;
+    text-decoration: none;
 }
 
 .nav_links li a:hover {
-    transition: all 0.3s ease 0s;
-    color: #0088a9
+    color: #0088a9;
 }
 
-.board {
+button {
+    padding: 9px 25px;
+    background-color: rgba(0, 136, 169, 1);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    margin-left: 20px;
+}
+
+button:hover {
+    background-color: rgba(0, 136, 169, 0.8);
+}
+
+.quote {
     position: relative;
-    top: 200px;
-    width: 900px;
-    height: auto; /* Adjust height based on content */
-    margin: auto;
-    padding: 40px; /* Adding padding for inner spacing */
-    background-color: white;
-    border-radius: 15px;
-    box-shadow: 10px 10px 5px 5px rgb(78, 76, 92);
-    background: linear-gradient(145deg, #ffffff, #e6e6e6);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    margin: 60px auto;
+    font-size: 30px;
+    color: #000000;
     text-align: center;
 }
+
+.About_Us {
+    width: 60rem; /* Ensure this fits within the parent container */
+    height: auto; /* Adjust height based on content */
+    padding: 10px; /* Adding padding for inner spacing */
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 10px 10px 5px 5px rgb(78, 76, 92);
+    background: linear-gradient(145deg, #ffffff, #e6e6e6);
+    
+    /* Centering */
+    margin: 50px auto; /* Adding top and bottom margin for spacing, auto for horizontal centering */
+    
+    /* Flexbox */
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+
+.offers {
+    border: none;
+    display: flex;
+    justify-content: space-around;
+    height:auto;
+    width: 90%;
+    margin: 80px auto;
+    box-sizing: border-box;
+}
+
+.box {
+    /* Box styling */
+    width: 20%;
+    height: auto;
+    background-color: #f8f9fa; /* A very light gray for a clean look */
+    border-radius: 15px; /* Slightly smaller radius for a modern feel */
+    border: 1px solid #ddd; /* A subtle border to define the box */
+    
+    /* Box shadow */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
+
+    /* Centering */
+    text-align: center;
+    padding: 20px; /* Add padding for better content spacing */
+
+    /* Text styling */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* A modern font */
+    font-size: 18px; /* Slightly smaller text for a clean look */
+    color: #333; /* Dark gray for better readability */
+}
+
+.box:hover {
+    /* Subtle hover effect */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Slightly stronger shadow on hover */
+    transform: translateY(-5px); /* Slight lift effect */
+    transition: all 0.3s ease; /* Smooth transition */
+}
+
+
+h2 {
+    text-align: center;
+}
+
 
 .parent_summary {
     font-size: 30px;
@@ -101,7 +181,7 @@ header {
 
 .summary {
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 20px;
+    font-size: 25px;
     color: hsl(0, 0%, 0%);
     margin-top: 20px; /* Space between heading and paragraph */
     line-height: 1.6; /* Improve readability */
@@ -110,22 +190,9 @@ header {
 
 /* */
 
-.context {
-    width: 100%;
-    position: absolute;
-    top: 50vh;
-}
-
-.context h1 {
-    text-align: center;
-    color: #fff;
-    font-size: 50px;
-}
-
-
 /* animated background */
 .area {
-    background: hwb(182 9% 38%);
+    background: #ffffff;
     background: -webkit-linear-gradient(to left, hsl(182, 9%, 38%), hsl(182, 9%, 38%));
     width: 100%;
     height: 100vh;
@@ -150,7 +217,7 @@ header {
     list-style: none;
     width: 20px;
     height: 20px;
-    background: rgba(255, 255, 255, 0.2);
+    background: rgba(0, 0, 0, 0.2);
     animation: animate 25s linear infinite;
     bottom: -150px;
 }
