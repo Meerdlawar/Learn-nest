@@ -23,6 +23,7 @@ img {
 
 .site_name {
     padding: 0px 20px;
+    font-size: 30px;
     font-family: "Montserrat", sans-serif;
 }
 
@@ -37,10 +38,9 @@ header {
 }
 
 .wrapper{
-    border: none;
-    width: 70rem;
+    width: 90rem;
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-around;
     align-items: center;
     padding: 30px 10%;
     background-color: #0aaec4;
@@ -48,10 +48,12 @@ header {
 }
 
 .contacts {
+    width: 40rem;
+    border: none;
     display: inline-block;
     padding: 0px 20px;
     font: 'Exo', sans-serif;
-    font-size: 30px;
+    font-size: 40px;
 }
 
 .logo {
@@ -152,6 +154,72 @@ h2 {
     line-height: 1.6; /* Improve readability */
     text-align: justify;
 }
+
+/* General Container for Contact Us Form */
+.contactUs {
+    max-width: 600px; /* Set a max-width to align with the content above */
+    margin: 0 auto; /* Center the form on the page */
+    padding: 40px 20px; /* Add padding around the form */
+    text-align: center; /* Center the text inside the form */
+}
+
+/* Form Heading */
+.contactUs h2 {
+    font-size: 40px; /* Increase font size for the heading */
+    color: #333; /* Darker color for contrast */
+    margin-bottom: 20px; /* Space between heading and form */
+}
+
+/* Form Inputs */
+.contactUs form input[type="text"],
+.contactUs form input[type="email"],
+.contactUs form textarea {
+    width: 100%; /* Full width to match the form container */
+    height: 50px;
+    padding: 15px; /* Add padding inside the input fields */
+    margin-bottom: 15px; /* Space between input fields */
+    border: 1px solid #ddd; /* Light border around input fields */
+    border-radius: 5px; /* Slightly rounded corners */
+    font-size: 20px; /* Consistent font size */
+    font-family: inherit; /* Inherit font from the parent */
+}
+
+/* Textarea Specific Styling */
+.contactUs form textarea {
+    height: 150px; /* Set a height for the textarea */
+    resize: vertical; /* Allow vertical resizing only */
+}
+
+/* Form Button */
+.contactUs form button {
+    padding: 15px 30px; /* Add padding to the button */
+    background-color: #0aaec4; /* Green background for the button */
+    color: #fff; /* White text */
+    border: none; /* Remove default border */
+    border-radius: 5px; /* Rounded corners for the button */
+    font-size: 18px; /* Increase font size */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+/* Button Hover Effect */
+.contactUs form button:hover {
+    background-color: #45a049; /* Darker green on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .contactUs {
+        padding: 20px 10px; /* Reduce padding on smaller screens */
+    }
+
+    .contactUs form button {
+        width: 100%; /* Full width button on smaller screens */
+    }
+}
+
+
+
 
 /* */
 
