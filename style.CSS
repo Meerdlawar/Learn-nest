@@ -1,229 +1,261 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:500');
 
-/* Resets the formatting so that the discrepencies between browsers are nullified */
+/* Resets the formatting to nullify discrepancies between browsers */
 * {
     margin: 0;
     padding: 0;
-    
+    box-sizing: border-box; /* Ensure padding and borders are included in element's total width and height */
 }
 
-/* every piece of text is in one font */
-.body {
+/* Use one consistent font across the site */
+body {
     font-family: 'Exo', sans-serif;
+    line-height: 1.6; /* Improve text readability */
 }
 
-/* Defines the size of the image*/
+/* Style for images */
 img {
     display: block;
-    margin-left: 40;
+    margin-left: auto;
+    margin-right: auto;
     border-radius: 40px;
-    width: 250px;
-    height: 200px;
+    width: 100%; /* Make the image responsive */
+    max-width: 250px; /* Limit the maximum width */
+    height: auto; /* Let the height adjust automatically */
 }
 
+/* Site name styling */
 .site_name {
     padding: 0px 20px;
-    font-size: 30px;
+    font-size: 2rem; /* Use relative font sizes for better scaling */
     font-family: "Montserrat", sans-serif;
 }
 
+/* Header styling */
 header {
     display: flex;
-    justify-content: flex-end;
+    flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+    justify-content: space-between;
     align-items: center;
-    padding: 20px 10%;
+    padding: 20px;
     background-color: #0aaec4;
-    margin: auto;
     color: #ffffff;
+    width: 100%;
 }
 
-.wrapper{
-    width: 90rem;
+/* Wrapper for logo and contacts */
+.wrapper {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
-    padding: 30px 10%;
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+    width: 70%;
+    padding: 20px;
     background-color: #0aaec4;
     margin: auto;
 }
 
+/* Contact information */
 .contacts {
-    width: 40rem;
-    border: none;
-    display: inline-block;
-    padding: 0px 20px;
-    font: 'Exo', sans-serif;
-    font-size: 40px;
+    text-align: right;
+    flex: 1;
 }
 
 .logo {
     display: flex;
     align-items: center;
-    padding: 0px 20px;
-    margin-right: auto;
+    padding: 0 20px;
 }
 
-button:hover {
-    background-color: rgba(0, 136, 169, 0.8);
-}
+/* Hover effect for buttons */
 
+
+/* Quote section */
 .quote {
-    position: relative;
     margin: 60px auto;
-    font-size: 30px;
+    font-size: 1.5rem;
     color: #000000;
     text-align: center;
+    padding: 20px;
 }
 
+/* About Us Section */
 .About_Us {
-    width: 60rem; /* Ensure this fits within the parent container */
-    height: auto; /* Adjust height based on content */
-    padding: 10px; /* Adding padding for inner spacing */
-    padding-top: 40px;
-    padding-bottom: 40px;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px;
     background-color: white;
     border-radius: 20px;
-    box-shadow: 10px 10px 5px 5px rgb(78, 76, 92);
+    box-shadow: 10px 10px 5px rgb(78, 76, 92);
     background: linear-gradient(145deg, #ffffff, #e6e6e6);
-    
-    /* Centering */
-    margin: 50px auto; /* Adding top and bottom margin for spacing, auto for horizontal centering */
-    
-    /* Flexbox */
-    display: flex;
-    justify-content: center;
     text-align: center;
 }
 
-
+/* Offers section */
 .offers {
-    border: none;
     display: flex;
+    flex-wrap: wrap; /* Allow boxes to stack on smaller screens */
     justify-content: space-around;
-    height:auto;
-    width: 90%;
     margin: 80px auto;
-    box-sizing: border-box;
+    width: 90%;
 }
 
+/* Offer box styling */
 .box {
-    /* Box styling */
-    width: 20%;
-    height: auto;
-    background-color: #f8f9fa; /* A very light gray for a clean look */
-    border-radius: 15px; /* Slightly smaller radius for a modern feel */
-    border: 1px solid #ddd; /* A subtle border to define the box */
-    
-    /* Box shadow */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
-
-    /* Centering */
+    width: 100%;
+    max-width: 300px; /* Restrict maximum width of boxes */
+    margin: 20px;
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-radius: 15px;
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
-    padding: 20px; /* Add padding for better content spacing */
-
-    /* Text styling */
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* A modern font */
-    font-size: 24px; /* Slightly smaller text for a clean look */
-    color: #333; /* Dark gray for better readability */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.2rem;
+    color: #333;
 }
 
+/* Subtle hover effect for offer boxes */
 .box:hover {
-    /* Subtle hover effect */
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Slightly stronger shadow on hover */
-    transform: translateY(-5px); /* Slight lift effect */
-    transition: all 0.3s ease; /* Smooth transition */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    transform: translateY(-5px);
+    transition: all 0.3s ease;
 }
 
-
+/* Center headings */
 h2 {
     text-align: center;
+    font-size: 2rem;
 }
 
-
+/* Parent summary section */
 .parent_summary {
-    font-size: 30px;
+    font-size: 1.5rem;
     color: hsl(0, 0%, 0%);
-    max-width: 800px; /* Restricting width to make the text more readable */
+    max-width: 800px;
+    margin: 0 auto;
 }
 
+/* Summary paragraph */
 .summary {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 25px;
+    font-size: 1.25rem;
     color: hsl(0, 0%, 0%);
-    margin-top: 20px; /* Space between heading and paragraph */
-    line-height: 1.6; /* Improve readability */
+    margin-top: 20px;
+    line-height: 1.6;
     text-align: justify;
 }
 
-/* General Container for Contact Us Form */
+/* Contact Us form container */
 .contactUs {
-    max-width: 600px; /* Set a max-width to align with the content above */
-    margin: 0 auto; /* Center the form on the page */
-    padding: 40px 20px; /* Add padding around the form */
-    text-align: center; /* Center the text inside the form */
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    text-align: center;
 }
 
-/* Form Heading */
+/* Contact Us form heading */
 .contactUs h2 {
-    font-size: 40px; /* Increase font size for the heading */
-    color: #333; /* Darker color for contrast */
-    margin-bottom: 20px; /* Space between heading and form */
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 20px;
 }
 
-/* Form Inputs */
+/* Contact Us form inputs and textarea */
 .contactUs form input[type="text"],
 .contactUs form input[type="email"],
 .contactUs form textarea {
-    width: 100%; /* Full width to match the form container */
-    height: 50px;
-    padding: 15px; /* Add padding inside the input fields */
-    margin-bottom: 15px; /* Space between input fields */
-    border: 1px solid #ddd; /* Light border around input fields */
-    border-radius: 5px; /* Slightly rounded corners */
-    font-size: 20px; /* Consistent font size */
-    font-family: inherit; /* Inherit font from the parent */
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1.25rem;
 }
 
-/* Textarea Specific Styling */
+/* Textarea specific styling */
 .contactUs form textarea {
-    height: 150px; /* Set a height for the textarea */
-    resize: vertical; /* Allow vertical resizing only */
+    height: 150px;
+    resize: vertical;
 }
 
-/* Form Button */
+/* Contact Us form button */
 .contactUs form button {
-    padding: 15px 30px; /* Add padding to the button */
-    background-color: #0aaec4; /* Green background for the button */
-    color: #fff; /* White text */
-    border: none; /* Remove default border */
-    border-radius: 5px; /* Rounded corners for the button */
-    font-size: 18px; /* Increase font size */
-    cursor: pointer; /* Change cursor to pointer on hover */
-    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+    width: 100%;
+    padding: 15px;
+    background-color: #0aaec4;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.25rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
-/* Button Hover Effect */
+/* Button hover effect */
 .contactUs form button:hover {
-    background-color: #45a049; /* Darker green on hover */
+    background-color: #45a049;
 }
 
-/* Responsive Design */
+/* Responsive design adjustments */
 @media (max-width: 768px) {
-    .contactUs {
-        padding: 20px 10px; /* Reduce padding on smaller screens */
+    header {
+        flex-direction: column;
+        text-align: center;
     }
 
-    .contactUs form button {
-        width: 100%; /* Full width button on smaller screens */
+    .wrapper {
+        flex-direction: column;
+    }
+
+    .contacts {
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    .quote {
+        font-size: 1.25rem;
+    }
+
+    .offers {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .box {
+        max-width: 100%;
+    }
+
+    .parent_summary {
+        font-size: 1.25rem;
+    }
+
+    .summary {
+        font-size: 1rem;
     }
 }
 
+@media (max-width: 480px) {
+    .quote {
+        font-size: 1rem;
+        padding: 10px;
+    }
 
+    .parent_summary {
+        font-size: 1rem;
+    }
 
+    .summary {
+        font-size: 0.875rem;
+    }
 
-/* */
+    .site_name {
+        font-size: 1.5rem;
+    }
+}
 
-/* animated background */
+/* Animated background */
 .area {
     background: #ffffff;
     background: -webkit-linear-gradient(to left, hsl(182, 9%, 38%), hsl(182, 9%, 38%));
@@ -234,7 +266,7 @@ h2 {
     z-index: -1;
 }
 
-/*animation*/
+/* Circle animation */
 .circles {
     position: absolute;
     top: 0;
@@ -330,15 +362,14 @@ h2 {
     animation-duration: 11s;
 }
 
+/* Circle animation keyframes */
 @keyframes animate {
     0% {
         transform: translateY(0) rotate(0deg);
         opacity: 1;
-        border-radius: 0;
     }
     100% {
         transform: translateY(-1000px) rotate(720deg);
         opacity: 0;
-        border-radius: 50%;
     }
 }
