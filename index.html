@@ -24,7 +24,7 @@
         
             <div class="contacts">
                 <p class = "phone_number"> Tel: +44 07539 086329</p>
-                <p class = "email"> Email: roshinjshareef@outlook.com</p>
+                <p class = "email"> Email: Learn.nest@outlook.com</p>
             </div>
         </div> 
     </header>
@@ -67,30 +67,42 @@
             <h2 style = "position: relative; top: 50px; font-size: 40px;"> What We Offer </h2> 
         </div>
 
-        <div class = "offers">
-            <div class = "box box-1">
-                <h3> English GCSE/IGCSE </h3>
-                <p> 
-                Our centre offers specialised GCSE English preparation courses to help learners excel in both English Language and English Literature. With a focus on critical reading, writing skills, and exam techniques, our courses cover everything from analysing texts to crafting well-structured essays. Our experienced tutors guide students through the curriculum, offering personalised support and targeted practice to build confidence. Whether you need help with comprehension, creative writing, or literary analysis, our tailored lessons ensure you're fully prepared to achieve success in your GCSE English exams.
-                </p> 
-            </div>
+        <ul class = "accordion">
+            <li>
+                <input type = "radio" name="accordion" id = "first" checked>
+                <label for = "first">GCSE/IGCSE</label>
+                <div class="content">
+                    <p>
+                        Our centre offers specialised GCSE English preparation courses to help learners excel in both English Language and English Literature. With a focus on critical reading, writing skills, and exam techniques, our courses cover everything from analysing texts to crafting well-structured essays. Our experienced tutors guide students through the curriculum, offering personalised support and targeted practice to build confidence. Whether you need help with comprehension, creative writing, or literary analysis, our tailored lessons ensure you're fully prepared to achieve success in your GCSE English exams.
+                    </p>
+                </div>
+            </li>
+        </ul>
 
-            <div class = "box box-2"> 
-                <h3> IELTS </h3>
-                <p> 
-                    Our center offers expertly designed IELTS preparation courses to help learners achieve their desired band scores. Whether you’re preparing for the Academic or General Training exam, our courses cover all four key components: Listening, Reading, Writing, and Speaking. With a team of experienced tutors, we provide targeted practice, exam strategies, and personalized feedback to ensure you feel confident and prepared. Our flexible class schedules and tailored learning plans make it easy to fit IELTS preparation into your routine, helping you reach your goals and succeed in this important step towards your academic or professional future.
-                </p> 
-            </div>
+        <ul class = "accordion">
+            <li>
+                <input type = "radio" name="accordion" id = "second">
+                <label for = "second">IELTS</label>
+                <div class="content">
+                    <p>
+                        Our center offers expertly designed IELTS preparation courses to help learners achieve their desired band scores. Whether you’re preparing for the Academic or General Training exam, our courses cover all four key components: Listening, Reading, Writing, and Speaking. With a team of experienced tutors, we provide targeted practice, exam strategies, and personalized feedback to ensure you feel confident and prepared. Our flexible class schedules and tailored learning plans make it easy to fit IELTS preparation into your routine, helping you reach your goals and succeed in this important step towards your academic or professional future.
+                    </p>
+                </div>
+            </li>
+        </ul>
 
-            <div class = "box box-3"> 
-                <h3> Functional Skills </h3>
-                <p>
-                    Functional Skills: 
+        <ul class = "accordion">
+            <li>
+                <input type = "radio" name="accordion" id = "third">
+                <label for = "third">Functional Skills</label>
+                <div class="content">
+                    <p>
+                        At our centre, we offer comprehensive support for learners preparing for Functional Skills qualifications in English, Maths, and ICT. Our courses are tailored to meet the needs of individuals, focusing on developing practical, everyday skills that are essential for both personal and professional success. With experienced tutors and engaging lessons, we ensure that learners build the confidence and knowledge needed to pass their Functional Skills exams. Whether you’re looking to improve your basic skills or need a qualification for work or further study, our supportive team is here to guide you every step of the way. 
+                    </p>
+                </div>
+            </li>
+        </ul>
 
-At our centre, we offer comprehensive support for learners preparing for Functional Skills qualifications in English, Maths, and ICT. Our courses are tailored to meet the needs of individuals, focusing on developing practical, everyday skills that are essential for both personal and professional success. With experienced tutors and engaging lessons, we ensure that learners build the confidence and knowledge needed to pass their Functional Skills exams. Whether you’re looking to improve your basic skills or need a qualification for work or further study, our supportive team is here to guide you every step of the way. 
-                </p> 
-            </div>
-        </div>
 
         <!-- Contact Us Form -->
         <div class="contactUs">
@@ -102,6 +114,7 @@ At our centre, we offer comprehensive support for learners preparing for Functio
                 <button type="submit">SEND MESSAGE</button>
             </form>
         </div>
+
 
     </body>
 
