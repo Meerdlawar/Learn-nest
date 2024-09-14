@@ -102,12 +102,26 @@
         <!-- Contact Us Form -->
         <div class="contactUs">
             <h2>MESSAGE US</h2>
-            <form action="https://formsubmit.co/learn.nest@outlook.com" method="POST">
-                <input type="text" name="name" placeholder="Your Name" required>
-                <input type="email" name="email" placeholder="Your Email" required>
+            
+            <!--
+            <form action="https://formsubmit.co/luzelixi@mailgolem.com" method="POST">
+                <input type="text" name="name" placeholder="Your Name" required/>
+                <input type="email" name="email" placeholder="Your Email" required/>
                 <textarea name="message" placeholder="Message" required></textarea>
                 <button type="submit">SEND MESSAGE</button>
             </form>
+            -->
+            <form action="https://api.web3forms.com/submit" method="POST">
+
+                <input type="hidden" name="access_key" value="fd8d46b7-8cb3-429e-9b13-ca458ce49610">
+                <input type="checkbox" name="botcheck" id="botcheck" style="display: none;">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email">
+                <textarea name="message" placeholder="Message"></textarea>
+                <input type="hidden" name="redirect" value="https://web3forms.com/success">
+                <button type="submit">Submit Form</button>
+            </form>
+
         </div>
         
     </body>
