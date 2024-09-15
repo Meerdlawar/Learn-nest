@@ -37,6 +37,9 @@ img {
     border-radius: 40px;
     max-width: 250px; /* Limit the maximum width */
     height: auto; /* Let the height adjust automatically */
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
 }
 
 /* Site name styling */
@@ -44,6 +47,9 @@ img {
     padding-left: 20px;
     font-size: 2rem; /* Use relative font sizes for better scaling */
     font-family: "Montserrat", sans-serif;
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
 }
 
 
@@ -119,6 +125,9 @@ img {
     align-self: flex-start;
     color: white;
     max-width: 400px; /* Increase max-width to make the contact box larger */
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
 }
 
 /* For tablets and smaller devices (screen width less than 768px) */
