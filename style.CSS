@@ -13,59 +13,39 @@ body {
     line-height: 1.6; /* Improve text readability */
 }
 
-/* Style for images */
-img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    border-radius: 40px;
-    width: 100%; /* Make the image responsive */
-    max-width: 250px; /* Limit the maximum width */
-    height: auto; /* Let the height adjust automatically */
-}
-
-/* Site name styling */
-.site_name {
-    padding: 0px 20px;
-    font-size: 2rem; /* Use relative font sizes for better scaling */
-    font-family: "Montserrat", sans-serif;
-}
-
 /* Header styling */
 header {
-    display: flex;
-    flex-wrap: wrap; /* Allow items to wrap on smaller screens */
-    justify-content: space-between;
-    align-items: center;
+    margin: auto;
     padding: 20px;
     background-color: #0aaec4;
     color: #ffffff;
     width: 100%;
 }
 
-/* Wrapper for logo and contacts */
-.wrapper {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap; /* Allow wrapping on smaller screens */
-    width: 70%;
-    padding: 20px;
-    background-color: #0aaec4;
-    margin: auto;
-}
-
-/* Contact information */
-.contacts {
-    text-align: right;
-    flex: 1;
-}
-
+/* Wrapper for logo and site name */
 .logo {
     display: flex;
+    justify-content: center; /* Center items horizontally */
     align-items: center;
+    margin: 0 auto; /* Center the logo container itself */
     padding: 0 20px;
+    width: 70%;
 }
+
+/* Style for images */
+img {
+    border-radius: 40px;
+    max-width: 250px; /* Limit the maximum width */
+    height: auto; /* Let the height adjust automatically */
+}
+
+/* Site name styling */
+.site_name {
+    padding-left: 20px;
+    font-size: 2rem; /* Use relative font sizes for better scaling */
+    font-family: "Montserrat", sans-serif;
+}
+
 
 /* Hover effect for buttons */
 
@@ -79,20 +59,102 @@ header {
     padding: 20px;
 }
 
+
+
+/* Contact Us Section */
+.contacts {
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+    background: linear-gradient(145deg, #ffffff, #e6e6e6);
+    text-align: left;
+    flex: 1; /* Make Contact Us section take less space */
+    max-width: 300px; /* Set a max-width for contacts */
+}
+
+/* Flexbox container */
+.MainBox {
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+     /* Set a maximum width for the container */
+    padding: 40px;
+    gap:5%
+}
+
 /* About Us Section */
 .About_Us {
+    margin: auto;
     max-width: 800px;
-    margin: 0 auto;
     padding: 40px;
     background-color: white;
     border-radius: 20px;
     box-shadow: 10px 10px 5px rgb(78, 76, 92);
     background: linear-gradient(145deg, #ffffff, #e6e6e6);
     text-align: center;
+    text-wrap: wrap;
 }
+
+/* Contacts Section */
+.contacts-right {
+    position: relative;
+    top: 60px;
+    align-self: flex-start;
+    padding: 40px; /* Increase padding to make the content more spacious */
+    background-color: #fff;
+    border-radius: 20px; /* Increased border radius for a more rounded look */
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.2); /* Increase shadow for clearer distinction */
+    background: linear-gradient(145deg, #ffffff, #e6e6e6);
+    text-align: left;
+    max-width: 400px; /* Increase max-width to make the contact box larger */
+}
+
+/* Contacts Section */
+.contacts-left {
+    margin-right: auto;
+    align-self: flex-start;
+    color: white;
+    max-width: 400px; /* Increase max-width to make the contact box larger */
+}
+
+/* For tablets and smaller devices (screen width less than 768px) */
+@media screen and (max-width: 768px) {
+    .MainBox {
+        flex-direction: column; /* Stack the About Us and Contacts vertically */
+        padding: 20px;
+    }
+
+    .About_Us, .contacts {
+        max-width: 100%; /* Allow sections to take full width */
+        flex: none; /* Remove flex distribution on smaller screens */
+    }
+}
+
+/* For mobile phones (screen width less than 480px) */
+@media screen and (max-width: 480px) {
+    .About_Us {
+        padding: 20px;
+        font-size: 14px; /* Smaller font size for mobile */
+    }
+
+    .contacts {
+        padding: 15px;
+        font-size: 14px;
+    }
+
+    .contacts header {
+        font-size: 20px;
+    }
+}
+
 
 /* Offers section */
 .offers {
+    margin: auto;
     display: flex;
     flex-wrap: wrap; /* Allow boxes to stack on smaller screens */
     justify-content: space-around;
